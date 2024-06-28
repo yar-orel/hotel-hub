@@ -1,0 +1,39 @@
+{
+  "name": "hotel-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@firebase/auth": "^1.5.1",
+    "@reduxjs/toolkit": "^2.0.1",
+    "antd": "^5.13.1",
+    "firebase": "^10.7.1",
+    "netlify": "^13.1.14",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "nvm": "^0.0.4",
+    "prop-types": "^15.8.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-query": "^3.39.3",
+    "react-redux": "^9.0.4",
+    "redux-saga": "^1.2.3",
+    "redux-saga-firebase": "^0.15.0",
+    "redux-typescript": "^1.2.1",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  }
+}

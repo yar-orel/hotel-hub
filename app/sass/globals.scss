@@ -1,0 +1,365 @@
+@import "_restore";
+@import "_mixins";
+@import "_vars";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $light-gray;
+}
+.header {
+  background-color: $dark-blue;
+  height: 56px;
+}
+
+.header-content {
+  @include flex-between;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: $white;
+  cursor: pointer;
+}
+
+.container {
+  padding: 10px 50px;
+  width: 100%;
+}
+
+.auth-form__logo {
+  width: 36px;
+  margin-right: 19px;
+}
+
+.auth-form {
+  @include flex-between;
+}
+
+.main {
+  @include flex-center;
+}
+
+.main-filter {
+  margin-bottom: 40px;
+}
+
+.main-table {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: $white;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.table__header {
+  background-color: $gray;
+  border: 1px solid $gray;
+  padding: 12px;
+}
+
+.table-tr {
+  height: 59px;
+  border: 2px solid $gray;
+}
+
+.table__item {
+  padding: 13px;
+}
+
+.table__header_center {
+  text-align: center;
+  padding-right: 95px;
+}
+
+.table__header_right {
+  text-align: right;
+}
+
+.table__item_right {
+  text-align: right;
+}
+
+.table__item_center {
+  text-align: center;
+  padding-right: 95px;
+}
+
+.table__item_left {
+  text-align: left;
+}
+
+.btn_item {
+  background-color: $light-blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 21px;
+  width: 177px;
+  height: 50px;
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+.main-pagination {
+  @include flex-center;
+}
+
+.pagination-list {
+  @include flex-center;
+}
+
+.btn_pagination {
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  color: $black;
+  margin: 7px;
+  margin-top: 27px;
+  &:hover {
+    background-color: $gray;
+  }
+}
+
+.header__btn {
+  text-decoration: transparent;
+  color: $white;
+  background-color: $dark-blue;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.header__logo {
+  max-width: 37px;
+  max-height: 32px;
+  display: block;
+  cursor: pointer;
+}
+
+.sign-in {
+  height: 671px;
+  @include align-center;
+}
+
+.sign-in-content {
+  @include align-center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: $light-blue;
+  cursor: pointer;
+}
+
+.header-account {
+  width: 205px;
+  @include flex-between;
+}
+
+.text-white {
+  color: white;
+}
+
+.item__link {
+  text-decoration: none;
+}
+
+.link__btn {
+  margin: 20px 0;
+  background-color: transparent;
+  font-size: 19px;
+  font-weight: bold;
+  border: none;
+  color: $light-blue;
+  cursor: pointer;
+}
+
+.characteristics__header {
+  text-decoration-line: underline;
+}
+
+.room-sides {
+  display: flex;
+}
+
+.room-left {
+  display: flex;
+}
+
+.room-characteristics {
+  width: 289px;
+  margin-left: 47px;
+}
+
+.characteristics-list {
+  text-decoration: none;
+}
+
+.features-item {
+  margin-bottom: 10px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.features-item::before {
+  content: url("../../public/done.svg");
+  margin-right: 10px;
+}
+
+.room-right {
+  width: 847px;
+  margin-left: 356px;
+}
+
+.room-buttons {
+  @include flex-right;
+}
+
+.btn_check-out {
+  font-size: 19px;
+  background-color: $light-blue;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 21px;
+  width: 177px;
+  height: 40px;
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+.btn_check-in {
+  font-size: 19px;
+  background-color: transparent;
+  border: 1px solid $light-blue;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 21px;
+  width: 177px;
+  height: 40px;
+  color: $light-blue;
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+.features__header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.room-down {
+  display: flex;
+  margin-top: 120px;
+}
+
+.room-header_description {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.room__description {
+  font-size: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  position: absolute;
+  top: -271px;
+  left: 785px;
+  font-size: 25px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.check-in__header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  height: 70px;
+}
+
+.check-in {
+  padding: 10px;
+}
+
+.check-in__btn_check-in{
+  font-size: 24px;
+}
+
+.check-in__btn_cancel {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 25px;
+  border: 1px solid #afb4b9;
+}
+
+.check-in-buttons {
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+.ant-picker-dropdown {
+  z-index: 10000;
+  left: 314px !important;
+  top: 138px !important;
+  font-size: 20px;
+}
+
+.input__guest {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.input__date {
+  margin-bottom: 50px;
+}
+
+.input__date input {
+  font-size: 20px !important;
+}
+
+.check-out__text {
+  margin-bottom: 50px;
+}
